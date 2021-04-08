@@ -1,8 +1,17 @@
 import { Component } from 'react';
+// import PropTypes from 'prop-types';
 import { v4 as uuid } from 'uuid';
 import styles from './Form.module.css';
 
 class Form extends Component {
+
+    // static defaultProps = {
+    //     //
+    // };
+
+    // static propTypes = {
+    //     //
+    // };
 
     state = {
         name: '',
