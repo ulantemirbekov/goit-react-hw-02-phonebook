@@ -61,12 +61,14 @@ class App extends Component {
 
     return (
       <>
-        <Section title={"Phonebook"} />
-        <Form addContact={this.addContact} />
+        <Section title={"Phonebook"} >
+          <Form addContact={this.addContact} />
+        </Section>
 
-        <Section title={"Contacts"} />
-        <Filter onChange={this.handleChange} filter={filter} />
-        <Contacts contacts={filteredContacts} deleteContact={this.deleteContact} />
+        <Section title={"Contacts"} >
+          <Filter onChange={this.handleChange} filter={filter} />
+          <Contacts contacts={filteredContacts} deleteContact={this.deleteContact} />
+        </Section >
 
       </>
     )
