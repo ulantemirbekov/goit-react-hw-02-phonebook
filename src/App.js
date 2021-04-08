@@ -23,7 +23,7 @@ class App extends Component {
 
     const { contacts } = this.state;
 
-    if (contacts.some(contact => contact.name === newContact.name)) {
+    if (contacts.some(contact => contact.name.toLocaleLowerCase() === newContact.name.toLocaleLowerCase())) {
       alert(`${newContact.name} is already in contacts.`);
       return;
     }
